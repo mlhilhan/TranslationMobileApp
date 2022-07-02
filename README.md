@@ -161,9 +161,9 @@ For more info please go to https://reactnative.dev/docs/publishing-to-app-store
 
 ## Styleguide
 
-For coding styling, we decided to go with ESLint and [React Native community's styleguide](https://github.com/facebook/react-native/tree/master/packages/eslint-config-react-native-community#readme).
+For coding styling, we decided to go with ESLint and [Styled-Components](https://styled-components.com/).
 
-# How to use it
+# How To Use It
 
 The idea of this section is to explain how the template composition is the best and easiest to use when you try to use well-formed, architectures, especially using redux flow.
 
@@ -177,11 +177,11 @@ Components are the basic blocks of a react native application, but since weâ€‹â€
 
 Another important thing is the use of propTypes to check the kind of data that your components need to work properly. If the component receives some data from others, the type of these props must be defined, and in case you need it the default value of the property too.
 
-### Static resources:
+### Static Resources:
 
 To keep an application scalable and organized, the global static resources that are used in the application have to be created in a specific file.
 
-### We manage three main folders for that:
+### We Manage Three Main Folders For That:
 
 - Assets: Here you can store all the images and icons that you need through the app. You have as an example the icon ic_home.png, to respond with the different device screen densities just create inside the same folder the image and all the scaled versions that you need. RN only handles x1, x2 and x3 in this case, you have.
 
@@ -206,14 +206,6 @@ When you need communication with a service you have to create a function to mana
 
 While the data transfer between the API and the app is working you must use the success and error actions that help you to catch the result of the operation. With this method, you can track the interaction through the redux store. This is useful because you can create behaviors based on those states in a quick and simple way
 
-### Redux folders
-
-4 folders divide the redux work
-
-- Store: Here you define the store shape and you can configure the persistReducer and middlewares.
-- Actions: Remember to create the file and the corresponding test for each action classification. Here you define actions for success and error scenarios.
-- Reducers: You have the error and success reducers by default. Create the other classifications and try to keep simple each file. Here you modify the store.
-- Selectors: Create one file for each action classification. Here you define what part of the store you need to see in your interface.
 
 ## Screens
 
