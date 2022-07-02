@@ -57,7 +57,7 @@ If you want to roll on your own and don't want to use this as a template, you ca
 
 Keep in mind that if you do this, you'll have to **install and link** all dependencies (as well as adding all the necessary native code for each library that requires it).
 
-## Folder structure
+## Folder Structure
 
 This template follows a very simple project structure:
 
@@ -83,9 +83,6 @@ This template follows a very simple project structure:
   - `App.js`: Main component that starts your whole app.
   - `index.js`: Entry point of your application as per React-Native standards.
 
-## Splash screen customization
-
-To customize the splash screen (logo and background color) use the CLI provided in the [official docs](https://github.com/zoontek/react-native-bootsplash#assets-generation).
 
 ## Setup environments
 
@@ -161,7 +158,7 @@ For more info please go to https://reactnative.dev/docs/publishing-to-app-store
 
 ## Styleguide
 
-For coding styling, we decided to go with ESLint and [Styled-Components](https://styled-components.com/).
+For coding styling, we decided to go with ESLint.
 
 # How To Use It
 
