@@ -1,6 +1,4 @@
-# React Native Template
-
-[![Moove It](https://circleci.com/gh/moove-it/react-native-template.svg?style=svg)](https://app.circleci.com/pipelines/github/moove-it/react-native-template?branch=master)
+# React Native
 
 This project aims to be a strong foundation for react-native applications. It provides a clear and organized structure, core dependencies, and boilerplate to jumpstart development.
 
@@ -12,7 +10,7 @@ This project aims to be a strong foundation for react-native applications. It pr
 - [JDK > 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Android Studio and Android SDK](https://developer.android.com/studio)
 
-## Base dependencies
+## Base Dependencies
 
 - [axios](https://github.com/axios/axios) for networking.
 - [prop-types](https://github.com/facebook/prop-types) to type-check our components exposed properties.
@@ -30,7 +28,7 @@ This project aims to be a strong foundation for react-native applications. It pr
 
 For coding styling, we decided to go with ESLint.
 
-# How To Use It
+## How To Use It
 
 1. Open terminal and type: `git clone [repostiry-url](https://github.com/mlhilhan/TranslationMobileApp.git)`
 2. Install npm packages from terminal while in project directory: `npm install --force`
