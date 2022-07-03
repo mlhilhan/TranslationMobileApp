@@ -6,6 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import TranslationPage from './src/screens/TranslationPage';
 import HistoryPage from './src/screens/HistoryPage';
 import SettingsPage from './src/screens/SettingsPage';
+// import {i18n} from './src/languages/_i18n.ts';
 
 const Tab = createBottomTabNavigator();
 
@@ -25,30 +26,39 @@ function MyTabs() {
         ],
       }}>
       <Tab.Screen
-        name="TranslationPage"
+        // name={() => {
+        //   I18n.t('translation');
+        // }}
+        name="Translation"
         component={TranslationPage}
         options={{
-          tabBarLabel: 'Çeviri',
+          tabBarLabel: 'Translation',
           tabBarIcon: () => (
             <MaterialIcons name="translate" color={'#fcc741'} size={30} />
           ),
         }}
       />
       <Tab.Screen
-        name="HistoryPage"
+        // name={() => {
+        //   I18n.t('history');
+        // }}
+        name="History"
         component={HistoryPage}
         options={{
-          tabBarLabel: 'Geçmiş',
+          tabBarLabel: 'History',
           tabBarIcon: () => (
             <MaterialIcons name="history" color={'#fcc741'} size={30} />
           ),
         }}
       />
       <Tab.Screen
-        name="SettingsPage"
+        // name={() => {
+        //   I18n.t('settings');
+        // }}
+        name="Settings"
         component={SettingsPage}
         options={{
-          tabBarLabel: 'Ayarlar',
+          tabBarLabel: 'Settings',
           tabBarIcon: () => (
             <MaterialIcons name="settings" color={'#fcc741'} size={30} />
           ),
