@@ -3,6 +3,7 @@ const tr = {
   settings: 'Ayarlar',
   history: 'Geçmiş',
   translation: 'Çeviri',
+  translate: 'Çevir',
 };
 
 export default tr;
