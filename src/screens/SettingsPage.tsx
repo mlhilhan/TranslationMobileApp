@@ -11,7 +11,6 @@ function SettingsPage() {
 }
 
 const Container = styled.View`
-  background-color: yellow;
   flex: 1;
   align-items: center;
   justify-content: center;

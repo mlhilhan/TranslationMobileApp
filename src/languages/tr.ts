@@ -6,6 +6,7 @@ const tr = {
   translate: 'Çevir',
   choose_language: 'Dil Seçin',
   to: 'den',
+  microphone: 'Mikrofuna Konuş',
 };
 
 export default tr;

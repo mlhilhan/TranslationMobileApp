@@ -97,9 +97,14 @@ function TranslationPage() {
         value={input}
         onChangeText={input => setInput(input)}
       />
-      <Button onPress={buttonTranslate}>
-        <TextinButton>{I18n.t('translate')}</TextinButton>
-      </Button>
+      <Container2>
+        <Button>
+          <TextinButton>{I18n.t('microphone')}</TextinButton>
+        </Button>
+        <Button onPress={buttonTranslate}>
+          <TextinButton>{I18n.t('translate')}</TextinButton>
+        </Button>
+      </Container2>
       <Input
         multiline={true}
         numberOfLines={5}
@@ -140,7 +145,7 @@ const Button = styled.TouchableOpacity`
 `;
 
 const TextinButton = styled.Text`
-  font-size: 18px;
+  font-size: 16px;
 `;
 
 export default TranslationPage;

@@ -5898,6 +5898,11 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
 
+"react-native-android-voice@^0.6.0":
+  "integrity" "sha512-rsIPmmtf+/MbA/YiZzvQVFg/Pip5m5hwQOuzcVOan96sT8exJ+jJB4hDAt77jX8tfR4L9NJiSP0Qk2mrttkZmw=="
+  "resolved" "https://registry.npmjs.org/react-native-android-voice/-/react-native-android-voice-0.6.0.tgz"
+  "version" "0.6.0"
+
 "react-native-codegen@^0.0.17":
   "integrity" "sha512-7GIEUmAemH9uWwB6iYXNNsPoPgH06pxzGRmdBzK98TgFBdYJZ7CBuZFPMe4jmHQTPOkQazKZ/w5O6/71JBixmw=="
   "resolved" "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.0.17.tgz"
@@ -5987,7 +5992,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@>=0.45.0", "react-native@>=0.57", "react-native@>=0.60.0", "react-native@0.68.2":
+"react-native@*", "react-native@>=0.13", "react-native@>=0.45.0", "react-native@>=0.57", "react-native@>=0.60.0", "react-native@0.68.2":
   "integrity" "sha512-qNMz+mdIirCEmlrhapAtAG+SWVx6MAiSfCbFNhfHqiqu1xw1OKXdzIrjaBEPihRC2pcORCoCHduHGQe/Pz9Yuw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.68.2.tgz"
   "version" "0.68.2"

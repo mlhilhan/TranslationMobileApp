@@ -6,6 +6,7 @@ const en = {
   translate: 'Translate',
   choose_language: 'Choose Language',
   to: 'to',
+  microphone: 'Speak into Microphone',
 };
 
 export default en;

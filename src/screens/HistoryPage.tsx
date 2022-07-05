@@ -11,7 +11,6 @@ function HistoryPage() {
 }
 
 const Container = styled.View`
-  background-color: green;
   flex: 1;
   align-items: center;
   justify-content: center;
