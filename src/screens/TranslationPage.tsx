@@ -3,6 +3,7 @@ import axios from 'axios';
 import styled from 'styled-components/native';
 import I18n from '../languages/_i18n';
 import SelectDropdown from 'react-native-select-dropdown';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function TranslationPage() {
   const [input, setInput] = useState('');
@@ -11,8 +12,18 @@ function TranslationPage() {
   const [textTranslateLanguage, setTextTranslateLanguage] = useState(null);
   const [resultLanguage, setResultLanguage] = useState(null);
 
+  const CreateStorageMultiple = async () => {
+    try {
+      await AsyncStorage.setItem('input', input);
+      console.log('Async Storage kaydı yapıldı: ' + input);
+    } catch (e) {
+      console.log('Async Storage kullanımında hata: ' + e);
+    }
+  };
+
   const buttonTranslate = () => {
     console.log('Butona basıldı ve buttonTranslate çalıştı.');
+    CreateStorageMultiple();
     /*
     const params = new URLSearchParamas();
     params.append('q', input);
@@ -40,6 +51,7 @@ function TranslationPage() {
         console.log('Apiye post edildi.');
         console.log('Çeviri Sonucu: ' + res.data);
         setOutput(res.data);
+        outputList.push(output);
       })
       .catch(error => {
         console.log('Api post edilirken hata oluştu: ' + error);
@@ -68,10 +80,10 @@ function TranslationPage() {
             console.log('Seçili Dil: ' + selectedItem, value);
             setTextTranslateLanguage(selectedItem);
           }}
-          buttonTextAfterSelection={(selectedItem, index) => {
+          buttonTextAfterSelection={selectedItem => {
             return selectedItem;
           }}
-          rowTextForSelection={(item, index) => {
+          rowTextForSelection={item => {
             return item;
           }}
         />
@@ -83,10 +95,10 @@ function TranslationPage() {
             console.log(selectedItem, index);
             setResultLanguage(selectedItem);
           }}
-          buttonTextAfterSelection={(selectedItem, index) => {
+          buttonTextAfterSelection={selectedItem => {
             return selectedItem;
           }}
-          rowTextForSelection={(item, index) => {
+          rowTextForSelection={item => {
             return item;
           }}
         />
